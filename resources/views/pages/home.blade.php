@@ -11,6 +11,12 @@
 
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
+        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+        
+
+        <script type="text/javascript" src="{{ URL::asset('js/fade.js') }}"></script>
+
         <!-- Styles -->
         <style>
           
@@ -90,7 +96,7 @@
         <div class="container">
             <div class="header header_table">
                 <div class="table">
-                    <h1>Welcome</h1>
+                    <div id="title"><h1>Welcome</h1></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <button class="button">Learn More</button>
