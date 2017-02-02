@@ -9,6 +9,12 @@
 
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
+        <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+        
+
+        <script type="text/javascript" src="{{ URL::asset('js/fade.js') }}"></script>
+
         <!-- Styles -->
         <style>
             
@@ -110,7 +116,6 @@
 
         <div class="container">
             <div class="header header_table">
-
                 <div class="table">
                     <div class="animate">
                     <div id="title">WHO WE ARE</div>

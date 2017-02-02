@@ -22,3 +22,5 @@ Route::get('about', function () {
 Route::get('gallery', function () {
     return view('pages.gallery');
 });
+
+

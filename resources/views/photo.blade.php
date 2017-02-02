@@ -17,10 +17,11 @@
 
         <script type="text/javascript" src="{{ URL::asset('js/fade.js') }}"></script>
 
+        <link href="{{URL::asset('public/images/space.jpg')}}">
+
         <!-- Styles -->
         <style>
           
-           
 
             .header {
                 height: 100%;
@@ -29,7 +30,7 @@
             }
 
             .header img {
-                width: 900px;
+                width: 500px;
             }
 
             .header_table {
@@ -101,10 +102,8 @@
 
 
         <div class="container">
-            
-                {{ Html::image('images/space.jpg') }}
             <div class="header header_table">
-                
+                {{ Html::image('images/space.jpg') }}
                 <div class="table">
                     <div id="title"><h1>Welcome</h1></div>
                     
@@ -120,5 +119,3 @@
             </div>
         </div>
 @endsection
-
-
