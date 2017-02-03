@@ -58,12 +58,11 @@
                 display: block;
                 float: left;
                 /*padding: 24px 26px;*/
-                background-color: #4CAF50;
-                color: white;
-                text-align: center;
-                text-decoration: none;
+                background-color: yellow;
 
             }
+
+            
 
             img {
                 max-width:30%;
@@ -75,7 +74,7 @@
     <body>
 
             <ul>
-              <li class="logo"><img src="http://image.flaticon.com/teams/1-freepik.jpg"></li>  
+              <li class="logo"><div class="logo_inner"></div></li>  
               <li><a href="{{ url('gallery') }}">Gallery</a></li>
               <li><a href="{{ url('about') }}">About</a></li>
               <li><a href="{{ url('/') }}">Home</a></li>

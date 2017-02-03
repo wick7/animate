@@ -28,8 +28,12 @@
                 background-color: ;
             }
 
-            .header img {
-                width: 900px;
+            
+
+            .container {
+                background: url(/images/black_white_bg.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
             }
 
             .header_table {
@@ -49,7 +53,7 @@
 
             .table h1 {
                 text-align: left;
-                color: white;
+                color: black;
                 font-family: 'Raleway', sans-serif;
                 font-size: 90px;
                 margin-top: 2px;
@@ -101,8 +105,8 @@
 
 
         <div class="container">
-            
-                {{ Html::image('images/space.jpg') }}
+                
+                
             <div class="header header_table">
                 
                 <div class="table">
