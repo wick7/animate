@@ -3,5 +3,9 @@ $(document).ready(function() {
   });
 
 $(document).ready(function() {
-    $(".button").hide().delay(1200).fadeIn(2000);
+    $(".btn1").hide().delay(1200).fadeIn(2000);
+  });
+
+$(document).ready(function() {
+    $(".btn2").hide().delay(2000).fadeIn(2000);
   });

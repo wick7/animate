@@ -98,6 +98,12 @@
                 height: 280px;
             }
 
+            .third {
+                padding-top: 4em;
+                padding-bottom: 4em;
+                background-color: gray;
+            }
+
             
             
         </style>
@@ -114,12 +120,16 @@
                     
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <button class="button">Learn More</button>
-                    <button class="button">Sign-Up</button>
+                    <button class="button btn1">Learn More</button>
+                    <button class="button btn2">Sign-Up</button>
                 </div>
                 
             </div>
             <div class="animate">
+                <img class="tablet" src="https://designcode.io/cloud/ios9-ipad/ipad.jpg">
+                <div class="animate_con"></div>
+            </div>
+            <div class="third">
                 <img class="tablet" src="https://designcode.io/cloud/ios9-ipad/ipad.jpg">
             </div>
         </div>
