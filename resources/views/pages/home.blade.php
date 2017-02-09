@@ -5,6 +5,7 @@
 
 
         <title>Laravel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -24,28 +25,29 @@
         <!-- Styles -->
         <style>
           
-           
+         /*First Pannel*/  
 
-            .header {
+            .first_pan {
+                background: url(/images/black_white_bg.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                height: 100%;
+                width: 100%;
+                
+            }
+
+            .first_con {
                 height: 100%;
                 width: 100%;
                 background-color: ;
             }
 
-            
-
-            .container {
-                background: url(/images/black_white_bg.jpg);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-            }
-
-            .header_table {
+            .first_table {
                 display: table;
             }
 
 
-            .table {
+            .info_table_first {
                 display: table-cell;
                 height: 100%;
                 width: 100%;
@@ -54,17 +56,17 @@
 
             }
 
-            .table h1 {
+            .info_table_first h1 {
                 text-align: left;
                 color: black;
                 font-family: 'Raleway', sans-serif;
                 font-size: 90px;
                 margin-top: 2px;
                 
-
             }
 
-            .table p {
+
+            .info_table_first p {
                 text-align: left;
                 color: black;
                 font-family: 'Raleway', sans-serif;
@@ -87,17 +89,14 @@
             
             }
 
-            .tablet {
-                height: 280px;
-            }
+           /* Second Pannel*/
 
-            .animate {
+            .second_pan {
                 
                 background-color: rgb(242, 242, 242);
             }
 
-
-            .animate_con {
+            .second_title {
                 padding-top: .5em;
                 
                 font-size: 3em;
@@ -107,47 +106,20 @@
             }
 
 
-            .third {
-                padding-top: 4em;
-                padding-bottom: 4em;
-                background-color: gray;
-            }
-
-            .fourth {
-                background-image: url(http://www.w3schools.com/css/trolltunga.jpg);
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-            }
-
-            .fourth_flex {
-                padding: 50px;
-                background-color: red;
-                margin-top: 10%;
-            }
-
-            .flexcontainer {
+            .second_wrap {
                 display: -webkit-flex;
                 display: flex;
                 -webkit-flex-direction: row;
                 flex-direction: row;
                 padding-top: 2em;
-                padding-bottom: 6em;
+                padding-bottom: 2em;
+
+
             }
 
-            .flexcontainer2 {
-                display: -webkit-flex;
-                display: flex;
-                -webkit-flex-direction: row;
-                flex-direction: row;
-                
-            }
 
-            .flexwrap > div {
-                display: table-cell;
-                min-width: 50%;
-            }
 
-            .flex {
+             .flex {  /*used in pannels 2 & 4*/
                 display: -webkit-flex;
                 display: flex;
                 -webkit-flex-direction: column;
@@ -155,6 +127,7 @@
                 height: 18em;
                 width: 25em;
                 margin: 0 auto;
+                justify-content:space-between;
        
             }
 
@@ -162,27 +135,84 @@
             .flex2 {background: url(http://7606-presscdn-0-74.pagely.netdna-cdn.com/wp-content/uploads/2016/03/Dubai-Photos-Images-Photos-of-Dubai-800x600.jpg);}
             .flex3 {background: url(http://www.gettyimages.com/gi-resources/images/frontdoor/creative/PanoramicImagesRM/FD_image.jpg);}
 
+
             .overlay {
                 background: rgba(0, 0, 0, .75);
                 color: white;
                 text-align: center;
                 vertical-align: middle;
-                line-height: 15em;
                 height: 100%;
                 width: 100%;
                 opacity: 0;
                 -webkit-transition: opacity .25s ease;
             }
 
+
             .flex:hover .overlay {
                   opacity:1;
                   
+            }
+
+
+            .flex:hover #orange {
+                opacity:1;
+            }
+
+            #orange {
+                padding: ;
+                border-style: solid;
+                border-width: 3px;
+                border-color: orange;
+                margin: 2em;
+                line-height: 15em;
+                color: white;
+                font-size: 80%;
             }   
+
+
+            /*Third Pannel*/
+
+            .third_pan {
+                padding-top: 4em;
+                padding-bottom: 4em;
+                background-color: gray;
+            }
+
+            .tablet {
+                height: 280px;
+            }
+
+
+
+            /*Fourth Pannel*/
+
+
+            .fourth_pan {
+                background-image: url(http://www.w3schools.com/css/trolltunga.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+
+            .fourth_wrap {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                
+            }
+
+            .fourth_flex {
+                padding: 50px;
+                background-color: red;
+                margin-top: 10%;
+            }
+            
         </style>
 
-        <div class="container">        
-            <div class="header header_table">
-                <div class="table">
+
+        <div class="first_pan">        
+            <div class="first_con first_table">
+                <div class="info_table_first">
                     <div id="title"><h1>Welcome</h1></div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -190,22 +220,22 @@
                     <button class="button btn2">Sign-Up</button>
                 </div>
             </div>
-            <div class="animate">
-                <div class="animate_con">We're Here For All Your Needs</div>
-                <div class="animate_wrap">
-                    <div class="flexcontainer">
-                        <div class="flex flex1"><div class="overlay"><h1>THIS IS OVERLAY</h1></div></div>
-                        <div class="flex flex2"><div class="overlay"><h1>THIS IS OVERLAY</h1></div></div>
-                        <div class="flex flex3"><div class="overlay"><h1>THIS IS OVERLAY</h1></div></div>
+            <div class="second_pan">
+                <!-- <div class="second_title">We're Here For All Your Needs</div> -->
+                <div class="second_con">
+                    <div class="second_wrap">
+                        <div class="flex flex1"><div class="overlay"><div id="orange"><h1>COST AWARENESS</h1></div></div></div>
+                        <div class="flex flex2"><div class="overlay"><div id="orange"><h1>SERVICE</h1></div></div></div>
+                        <div class="flex flex3"><div class="overlay"><div id="orange"><h1>QUALITY PRODUCTION</h1></div></div></div>
                     </div>
                 </div>
             </div>
-            <div class="third">
+            <div class="third_pan">
                 <img class="tablet" src="https://designcode.io/cloud/ios9-ipad/ipad.jpg">
             </div>
-            <div class="fourth">
-                <div class="fourthcontainer">
-                    <div class="flexcontainer2">
+            <div class="fourth_pan">
+                <div class="fourth_con">
+                    <div class="fourth_wrap">
                         <div class="flex"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
                         <div class="flex"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
                     </div>
