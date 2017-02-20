@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
         <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=BioRhyme|Ewert" rel="stylesheet">
 
         <!-- JQuery -->
 
@@ -28,8 +29,8 @@
          /*First Pannel*/  
 
             .first_pan {
-                background: url(/images/black_white_bg.jpg);
-                background-size: 100% 100%;
+                background: url(/images/yard.jpg);
+                background-size:  cover;
                 background-repeat: no-repeat;
                 height: 100%;
                 width: 100%;
@@ -58,35 +59,41 @@
 
             .info_table_first h1 {
                 text-align: left;
-                color: black;
-                font-family: 'Raleway', sans-serif;
+                color: rgb(255, 255, 255);
+                font-family: 'Ewert', cursive;
                 font-size: 90px;
-                margin-top: 2px;
+                margin-top: -30px;
                 
             }
 
 
             .info_table_first p {
                 text-align: left;
-                color: black;
-                font-family: 'Raleway', sans-serif;
-                
+                color: rgb(255, 255, 255);
+                font-family: 'BioRhyme', serif;
+                margin-right: 50%;
+                font-size: 90%;
             }
 
             .button {
                 
-                background-color: #4CAF50;
+                background-color: rgb(2, 23, 255);
                 border: none;
                 color: white;
-                padding: 15px 32px;
-                text-align: center;
+                /*padding: 15px 32px;*/
+                padding: 2% 5%;
+                text-align: left;
                 text-decoration: none;
                 display: inline-block;
                 font-size: 16px;
                 margin: 0 auto;
                 cursor: pointer;
-                margin-left: 90px;
-            
+                
+                margin-bottom: 1%;
+            }
+
+            .btn2 {
+                margin-left: 10em;
             }
 
            /* Second Pannel*/
@@ -96,44 +103,31 @@
                 background-color: rgb(242, 242, 242);
             }
 
-            .second_title {
-                padding-top: .5em;
-                
-                font-size: 3em;
-                font-family: 'Bad Script';
-                text-align: center;
-
-            }
-
 
             .second_wrap {
                 display: -webkit-flex;
                 display: flex;
                 -webkit-flex-direction: row;
                 flex-direction: row;
-                padding-top: 2em;
-                padding-bottom: 2em;
-
+                padding-top: em;
+                padding-bottom: em;
 
             }
 
 
-
-             .flex {  /*used in pannels 2 & 4*/
+             .flex22 {  /*used in pannels 2 & 4*/
                 display: -webkit-flex;
                 display: flex;
                 -webkit-flex-direction: column;
                 flex-direction: column;
-                height: 18em;
-                width: 25em;
-                margin: 0 auto;
-                justify-content:space-between;
+                height: 20em;
+                width: 100%;
        
             }
 
-            .flex1 {background: url(https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/pia20645_main.jpg?itok=dLn7SngD); }
-            .flex2 {background: url(http://7606-presscdn-0-74.pagely.netdna-cdn.com/wp-content/uploads/2016/03/Dubai-Photos-Images-Photos-of-Dubai-800x600.jpg);}
-            .flex3 {background: url(http://www.gettyimages.com/gi-resources/images/frontdoor/creative/PanoramicImagesRM/FD_image.jpg);}
+            .flex1 {background: url(/images/chopping.jpg);}
+            .flex2 {background: url(/images/winter_wood.jpeg); background-size: cover;}
+            .flex3 {background: url(/images/planting.jpeg); background-size: cover;}
 
 
             .overlay {
@@ -148,49 +142,111 @@
             }
 
 
-            .flex:hover .overlay {
+            .flex22:hover .overlay {
                   opacity:1;
                   
             }
 
 
-            .flex:hover #orange {
+            .flex22:hover #orange {
                 opacity:1;
             }
 
             #orange {
-                padding: ;
+               
                 border-style: solid;
                 border-width: 3px;
-                border-color: orange;
-                margin: 2em;
-                line-height: 15em;
+                border-color: rgb(255, 111, 2);
+                /*margin-left: 1em;
+                margin-right: 1em;
+                margin-top: 1em;
+                padding-bottom: 2em;*/
+                margin: 1em;
                 color: white;
-                font-size: 80%;
-            }   
+                overflow: auto;
+                height: 90%;
+            }  
+
+            #orange h1 {
+                font-size: 2em;
+                font-family: 'BioRhyme', serif;
+                text-align: center;
+                margin-top: 2em;
+                margin-right: .3em;
+                margin-left: .3em;
+            }
 
 
             /*Third Pannel*/
 
+            .flex33 {  /*used in pannels 2 & 4*/
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                flex-direction: column;
+                height: 18em;
+                width: 25em;
+                margin: 0 auto;
+                justify-content:space-between;
+       
+            }
+
             .third_pan {
+                position: relative;
                 padding-top: 4em;
                 padding-bottom: 4em;
-                background-color: gray;
             }
+
+            .third_pan:before {
+                content: '';
+                position: absolute;
+                background-image: url(/images/chopped.jpg);
+                background-size: cover;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.4;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+
 
             .tablet {
                 height: 280px;
             }
 
+            .third_wrap {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                
+            }
 
 
             /*Fourth Pannel*/
 
+            .flex4 {  /*used in pannels 2 & 4*/
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                flex-direction: column;
+                height: 18em;
+                width: 25em;
+                margin: 0 auto;
+                justify-content:space-between;
+       
+            }
+
 
             .fourth_pan {
-                background-image: url(http://www.w3schools.com/css/trolltunga.jpg);
+                /*background-image: url(http://www.w3schools.com/css/trolltunga.jpg);*/
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
+                background-color: rgb(2, 23, 255);
             }
 
             .fourth_wrap {
@@ -202,9 +258,44 @@
             }
 
             .fourth_flex {
-                padding: 50px;
+                padding: 20px;
                 background-color: red;
                 margin-top: 10%;
+                margin-bottom: 10%;
+            }
+
+            /*Fifth Pannel*/
+
+            .flex5 {  /*used in pannels 2 & 4*/
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                flex-direction: column;
+                height: 18em;
+                width: 25em;
+                margin: 0 auto;
+                justify-content:space-between;
+       
+            }
+
+            .fifth_pan {
+                background-color: gray;
+                padding-top: 4em;
+                padding-bottom: 4em;
+                
+                
+            }
+
+            .tablet {
+                height: 280px;
+            }
+
+            .fifth_wrap {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                
             }
             
         </style>
@@ -213,31 +304,45 @@
         <div class="first_pan">        
             <div class="first_con first_table">
                 <div class="info_table_first">
-                    <div id="title"><h1>Welcome</h1></div>
+                    <div id="title"><h1>JOE'S </br>LUMBER</br> YARD</h1></div>
+                    <div id="para">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
                     <button class="button btn1">Learn More</button>
-                    <button class="button btn2">Sign-Up</button>
+                    <button class="button btn2">Order Now</button>
                 </div>
             </div>
             <div class="second_pan">
-                <!-- <div class="second_title">We're Here For All Your Needs</div> -->
                 <div class="second_con">
                     <div class="second_wrap">
-                        <div class="flex flex1"><div class="overlay"><div id="orange"><h1>COST AWARENESS</h1></div></div></div>
-                        <div class="flex flex2"><div class="overlay"><div id="orange"><h1>SERVICE</h1></div></div></div>
-                        <div class="flex flex3"><div class="overlay"><div id="orange"><h1>QUALITY PRODUCTION</h1></div></div></div>
+                        <div class="flex22 flex1"><div class="overlay"><div id="orange"><h1>CUSTOM CUTS FOR ANY NEEDS</h1></div></div></div>
+                        <div class="flex22 flex2"><div class="overlay"><div id="orange"><h1>FIRE WOOD ALL WINTER LONG</h1></div></div></div>
+                        <div class="flex22 flex3"><div class="overlay"><div id="orange"><h1>FOR EVERY TREE CHOPPED, TWO MORE ARE PLANTED</h1></div></div></div>
                     </div>
                 </div>
             </div>
             <div class="third_pan">
-                <img class="tablet" src="https://designcode.io/cloud/ios9-ipad/ipad.jpg">
+                <div class="third_con">
+                    <div class="third_wrap">
+                        <div class="flex33"><div class="fourth_flex"><h1>Call For A Quote</h1></div></div>
+                        <div class="flex33"><div class="fourth_flex"><h1>CALL FOR A QUOTE</h1></div></div>
+                    </div>
+                </div>
             </div>
             <div class="fourth_pan">
                 <div class="fourth_con">
                     <div class="fourth_wrap">
-                        <div class="flex"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
-                        <div class="flex"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
+                        <div class="flex4"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
+                        <div class="flex4"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fifth_pan">
+                <div class="fifth_con">
+                    <div class="fifth_wrap">
+                        <div class="flex5"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
+                        <div class="flex5"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
                     </div>
                 </div>
             </div>

@@ -31,7 +31,7 @@
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                background-color: #333;
+                background-color: rgb(255, 111, 2);
             }
 
             li {
@@ -47,7 +47,7 @@
             }
 
             li a:hover:not(.active) {
-                background-color: #4CAF50;
+                background-color: rgb(2, 23, 255);
             }
 
             .active {
@@ -71,8 +71,10 @@
             
         </style>
     </head>
-    <body>
+    
+            
 
+        <div class="container">
             <ul>
               <li class="logo"><div class="logo_inner"></div></li>  
               <li><a href="{{ url('gallery') }}">Gallery</a></li>
@@ -80,12 +82,10 @@
               <li><a href="{{ url('/') }}">Home</a></li>
             </ul>
 
-        <div class="container">
             
         @yield('content')
+        @yield('footer')
+        
 
         </div>
-
-    
-    </body>
 </html>
