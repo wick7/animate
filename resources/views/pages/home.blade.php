@@ -34,17 +34,9 @@
           
          /*First Pannel*/  
 
-            .first_pan {
-                
-                
-                display: -webkit-flex;
-                display: flex;
-                -webkit-flex-direction: column;
-                flex-direction: column;
-            
-            }
+           
 
-            .first_con {
+            .first_pan {
                 background: url(/images/yard.jpg);
                 background-size:  cover;
                 background-repeat: no-repeat;
@@ -54,12 +46,13 @@
                 
             }
 
-            .info_table_first {
-                margin: 20px;
-                background-color: ;
+            .first_pan li {
+                margin: 1em;
             }
 
-            .info_table_first h1 {
+            
+
+            .first_con h1 {
                 text-align: center;
                 color: rgb(255, 255, 255);
                 /*font-family: 'Ewert', cursive;*/
@@ -70,7 +63,7 @@
             }
 
 
-            .info_table_first p {
+            .first_con p {
                 text-align: left;
                 color: rgb(255, 255, 255);
                 font-family: 'Open Sans', sans-serif;
@@ -81,7 +74,7 @@
                 
             }
 
-            .info_table_first button {
+            .first_con button {
                 background-color: rgb(2, 23, 255);
                 border: none;
                 color: white;
@@ -95,48 +88,40 @@
                 
             }
 
-            .btn_flex {
+            .btn_con_first {
                 margin: 0 auto;
                 width: 45%;                
                 display: -webkit-flex;
                 display: flex;
                 -webkit-flex-direction: row;
                 flex-direction: row;
-                
-               justify-content: space-between;
-                background-color: ;
+                justify-content: space-between;
             }
-
-            .button {
-
-            }
-
-            
-            
+ 
 
           
 
-           /* Second Pannel*/
+           /* Fourth Pannel - former second*/
 
-            .second_pan {
+            .fourth_pan {
                 
                 background-color: white;
 
             }
 
-            .second_con h1, p {
+            .fourth_pan h1, p {
                 text-align: center;
                 color: black;
                 
             }
 
-            .second_con h1 { 
+            .fourth_pan h1 { 
                 font-size: 4em;
                 font-family: 'Quicksand', sans-serif;
 
             }
 
-            .second_con p { 
+            .fourth_pan p { 
                 font-size: 1em;
                 margin-top: 0em;
                 margin-left: 2em;
@@ -147,7 +132,7 @@
             }
 
 
-            .second_wrap {
+            .fourth_wrap {
                 display: -webkit-flex;
                 display: flex;
                 -webkit-flex-direction: row;
@@ -163,7 +148,7 @@
             
 
 
-            .flex22 {  
+            .overlay_bef {  
                 height: auto;
                 
                 flex: 1;
@@ -176,9 +161,9 @@
 
             }
 
-            .flex1 {background: url(/images/chopping.jpg);background-size: cover; background-repeat: no-repeat;}
-            .flex2 {background: url(/images/winter_wood.jpeg); background-size: cover; background-repeat: no-repeat;}
-            .flex3 {background: url(/images/planting.jpeg); background-size: cover; background-repeat: no-repeat;}
+            .overlay_bef1 {background: url(/images/chopping.jpg);background-size: cover; background-repeat: no-repeat;}
+            .overlay_bef2 {background: url(/images/winter_wood.jpeg); background-size: cover; background-repeat: no-repeat;}
+            .overlay_bef3 {background: url(/images/planting.jpeg); background-size: cover; background-repeat: no-repeat;}
 
 
             .overlay {
@@ -206,14 +191,14 @@
                 color: white;
             }
 
-            .flex22:hover .overlay {
+            .overlay_bef:hover .overlay {
                   opacity:1;
                   border-radius: 10px 10px;
                   
             }
 
 
-            .flex22:hover #orange {
+            .overlay_bef:hover #orange {
                 opacity:1;
                 border-radius: 10px 10px;
                 
@@ -313,7 +298,7 @@
             }
 
 
-            .fourth_pan {
+          /*  .fourth_pan {
                 
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
@@ -341,7 +326,7 @@
                 background-color: red;
                 margin-top: 10%;
                 margin-bottom: 10%;
-            }
+            }*/
 
             /*Fifth Pannel*/
 
@@ -543,36 +528,21 @@
                 z-index: -1;
             }
 
-            .this_wrap video {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                min-width: 100%;
-                min-height: 100%;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-            }
+         
 
             /*this section end*/
-        </style>
-
-    
-
-        <div class="first_pan"> 
-              
-            <div class="first_con first_table">
-            <ul>
-              <li class="logo"><div class="logo_inner"><h1>JLY</h1></div></li>  
-              <li><a href="{{ url('about') }}">About</a></li>
-              <li><a href="{{ url('/') }}">Home</a></li>
-            </ul> 
-                <div class="info_table_first">
+        </style>  
+            <div class="first_pan">
+                <ul>
+                  <li class="logo"><div class="logo_inner"><h1>JLY</h1></div></li>  
+                  <li><a href="{{ url('about') }}">About</a></li>
+                  <li><a href="{{ url('/') }}">Home</a></li>
+                </ul> 
+                <div class="first_con">
                     <h1>JOE'S </br>LUMBER</br>YARD</h1>                    
-                    <div class="btn_flex">
-                        <a href="{{ url('about') }}"><button class="button btn1">Learn More</button></a>
-                        <a href="{{ url('gallery') }}"><button class="button btn2" >Order Now</button></a>
+                    <div class="btn_con_first">
+                        <a href="{{ url('/') }}"><button class="button btn1">Learn More</button></a>
+                        <a href="{{ url('/') }}"><button class="button btn2" >Order Now</button></a>
                     </div>
                 </div>
             </div>
@@ -599,16 +569,16 @@
                     </div>
                 </div>
             </div>
-            <div class="second_pan">
-                <div class="second_con" href="#">
+            <div class="fourth_pan">
+                <div class="fourth_con" href="#">
                 <h1>What We Offer</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 <hr>
                 <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
-                    <div class="second_wrap">
-                        <div class="flex22 flex1"><div class="overlay"><h1>CUSTOM CUTS FOR ANY NEEDS</h1></div></div>
-                        <div class="flex22 flex2"><div class="overlay"><h1>FIRE WOOD ALL WINTER LONG</h1></div></div>
-                        <div class="flex22 flex3"><div class="overlay"><h1>DISCOUNTS FOR MEMBERS</h1></div></div>
+                    <div class="fourth_wrap">
+                        <div class="overlay_bef overlay_bef1"><div class="overlay"><h1>CUSTOM CUTS FOR ANY NEEDS</h1></div></div>
+                        <div class="overlay_bef overlay_bef2"><div class="overlay"><h1>FIRE WOOD ALL WINTER LONG</h1></div></div>
+                        <div class="overlay_bef overlay_bef3"><div class="overlay"><h1>DISCOUNTS FOR MEMBERS</h1></div></div>
                     </div>
                 </div>
             </div>
