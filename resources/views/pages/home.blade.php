@@ -15,6 +15,8 @@
         <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=BioRhyme|Ewert" rel="stylesheet">
 
+        <link href="https://fonts.googleapis.com/css?family=Clicker+Script|Quicksand" rel="stylesheet">
+
         <!-- JQuery -->
 
         <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -25,82 +27,123 @@
 
         <!-- Styles -->
         <style>
+
+            /*Navigation*/
+
+            
           
          /*First Pannel*/  
 
             .first_pan {
-                background: url(/images/yard.jpg);
-                background-size:  cover;
-                background-repeat: no-repeat;
-                height: 100%;
-                width: 100%;
                 
+                
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            
             }
 
             .first_con {
-                height: 100%;
+                background: url(/images/yard.jpg);
+                background-size:  cover;
+                background-repeat: no-repeat;
+                max-height: 100%;
+                height: 60em;
                 width: 100%;
+                
+            }
+
+            .info_table_first {
+                margin: 20px;
                 background-color: ;
             }
 
-            .first_table {
-                display: table;
-            }
-
-
-            .info_table_first {
-                display: table-cell;
-                height: 100%;
-                width: 100%;
-                padding-left: 40px;
-                padding-top: 40px;
-
-            }
-
             .info_table_first h1 {
-                text-align: left;
+                text-align: center;
                 color: rgb(255, 255, 255);
-                font-family: 'Ewert', cursive;
-                font-size: 90px;
-                margin-top: -30px;
-                
+                /*font-family: 'Ewert', cursive;*/
+                font-family: 'Quicksand', sans-serif;
+                font-size: 5em;
+                background-color: ;
+                margin-bottom: 0px;
             }
 
 
             .info_table_first p {
                 text-align: left;
                 color: rgb(255, 255, 255);
-                font-family: 'BioRhyme', serif;
+                font-family: 'Open Sans', sans-serif;
                 margin-right: 50%;
                 font-size: 90%;
+                background-color: ;
+
+                
             }
 
-            .button {
-                
+            .info_table_first button {
                 background-color: rgb(2, 23, 255);
                 border: none;
                 color: white;
-                /*padding: 15px 32px;*/
-                padding: 2% 5%;
-                text-align: left;
+                padding: 20px;
+                text-align: center;
                 text-decoration: none;
-                display: inline-block;
                 font-size: 16px;
-                margin: 0 auto;
                 cursor: pointer;
+                font-family: 'Open Sans', sans-serif;
+                border-radius: 10px 10px;
                 
-                margin-bottom: 1%;
             }
 
-            .btn2 {
-                margin-left: 10em;
+            .btn_flex {
+                margin: 0 auto;
+                width: 45%;                
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                
+               justify-content: space-between;
+                background-color: ;
             }
+
+            .button {
+
+            }
+
+            
+            
+
+          
 
            /* Second Pannel*/
 
             .second_pan {
                 
-                background-color: rgb(242, 242, 242);
+                background-color: white;
+
+            }
+
+            .second_con h1, p {
+                text-align: center;
+                color: black;
+                
+            }
+
+            .second_con h1 { 
+                font-size: 4em;
+                font-family: 'Quicksand', sans-serif;
+
+            }
+
+            .second_con p { 
+                font-size: 1em;
+                margin-top: 0em;
+                margin-left: 2em;
+                margin-right: 2em;
+                color: gray;
+                font-family: 'Open Sans', sans-serif;
+
             }
 
 
@@ -109,72 +152,73 @@
                 display: flex;
                 -webkit-flex-direction: row;
                 flex-direction: row;
-                padding-top: em;
-                padding-bottom: em;
+                margin: 0 auto;
+                justify-content: space-between;
+                width: auto;
+                margin-top: 5em;
+
 
             }
 
+            
 
-             .flex22 {  /*used in pannels 2 & 4*/
-                display: -webkit-flex;
-                display: flex;
-                -webkit-flex-direction: column;
-                flex-direction: column;
-                height: 20em;
-                width: 100%;
-       
+
+            .flex22 {  
+                height: auto;
+                
+                flex: 1;
+                box-sizing: border-box;
+                margin-left: 0em;
+                border-radius: 10px 10px;
+                
+                height: 300px; 
+                margin-bottom: 5em;
+
             }
 
-            .flex1 {background: url(/images/chopping.jpg);}
-            .flex2 {background: url(/images/winter_wood.jpeg); background-size: cover;}
-            .flex3 {background: url(/images/planting.jpeg); background-size: cover;}
+            .flex1 {background: url(/images/chopping.jpg);background-size: cover; background-repeat: no-repeat;}
+            .flex2 {background: url(/images/winter_wood.jpeg); background-size: cover; background-repeat: no-repeat;}
+            .flex3 {background: url(/images/planting.jpeg); background-size: cover; background-repeat: no-repeat;}
 
 
             .overlay {
                 background: rgba(0, 0, 0, .75);
                 color: white;
                 text-align: center;
-                vertical-align: middle;
-                height: 100%;
-                width: 100%;
+                vertical-align: middle;                
                 opacity: 0;
                 -webkit-transition: opacity .25s ease;
+                height: 100%;
+                border-style: solid;
+                border-width: 3px;
+                border-color: rgb(255, 111, 2);
+                border-radius: 10px 10px;
+
             }
 
+            .overlay h1 {
+                font-size: 2em;
+                font-family: 'Quicksand', sans-serif;
+                text-align: center;
+                margin-top: 2em;
+                margin-right: .3em;
+                margin-left: .3em;
+                color: white;
+            }
 
             .flex22:hover .overlay {
                   opacity:1;
+                  border-radius: 10px 10px;
                   
             }
 
 
             .flex22:hover #orange {
                 opacity:1;
+                border-radius: 10px 10px;
+                
             }
 
-            #orange {
-               
-                border-style: solid;
-                border-width: 3px;
-                border-color: rgb(255, 111, 2);
-                /*margin-left: 1em;
-                margin-right: 1em;
-                margin-top: 1em;
-                padding-bottom: 2em;*/
-                margin: 1em;
-                color: white;
-                overflow: auto;
-                height: 90%;
-            }  
-
-            #orange h1 {
-                font-size: 2em;
-                font-family: 'BioRhyme', serif;
-                text-align: center;
-                margin-top: 2em;
-                margin-right: .3em;
-                margin-left: .3em;
-            }
 
 
             /*Third Pannel*/
@@ -184,8 +228,9 @@
                 display: flex;
                 -webkit-flex-direction: column;
                 flex-direction: column;
+                
                 height: 18em;
-                width: 25em;
+                width: 20em;
                 margin: 0 auto;
                 justify-content:space-between;
        
@@ -193,38 +238,64 @@
 
             .third_pan {
                 position: relative;
-                padding-top: 4em;
-                padding-bottom: 4em;
+                padding-top: 3em;
+                padding-bottom: 3em;
+            }
+
+            .third_wrap {
+                width: 100%;
+            }
+
+            .third_wrap h1 {
+                text-align: center;
+                font-size: 3em;
+                color: white;
+                font-family: 'Quicksand', sans-serif;
             }
 
             .third_pan:before {
                 content: '';
                 position: absolute;
-                background-image: url(/images/chopped.jpg);
+                background-image: url(/images/shop.jpeg);
                 background-size: cover;
                 display: block;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 100%;
-                opacity: 0.4;
+                opacity: 0.7;
                 background-attachment: fixed;
                 background-repeat: no-repeat;
                 z-index: -1;
             }
 
-
-            .tablet {
-                height: 280px;
+            .this2_pan {
+                position: relative;
+                padding-top: .5em;
+                padding-bottom: 0em;
+                z-index: 1;
+                background-color: white;
             }
 
-            .third_wrap {
-                display: -webkit-flex;
-                display: flex;
-                -webkit-flex-direction: row;
-                flex-direction: row;
-                
+            .this2_wrap {
+                width: 100%;
             }
+
+            .this2_wrap h1 {
+                text-align: center;
+                font-family: 'Clicker Script', cursive;
+                font-size: 4em;
+            }
+
+            .this2_wrap h2 {
+                text-align: right;
+                margin-top: .2em;
+                margin-right: 3em;
+                font-family: 'Clicker Script', cursive;
+                font-size: 2em;
+            }
+
+           
 
 
             /*Fourth Pannel*/
@@ -243,10 +314,11 @@
 
 
             .fourth_pan {
-                /*background-image: url(http://www.w3schools.com/css/trolltunga.jpg);*/
+                
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
-                background-color: rgb(2, 23, 255);
+                background-color: white;
+                
             }
 
             .fourth_wrap {
@@ -254,7 +326,14 @@
                 display: flex;
                 -webkit-flex-direction: row;
                 flex-direction: row;
-                
+                align-items: center;
+            }
+
+            .fourth  {
+                width: 6em;
+                height: 6em;
+                background-color: blue;
+
             }
 
             .fourth_flex {
@@ -280,15 +359,15 @@
 
             .fifth_pan {
                 background-color: gray;
-                padding-top: 4em;
-                padding-bottom: 4em;
-                
+                padding-top: 1em;
+                padding-bottom: 1em;
                 
             }
 
-            .tablet {
-                height: 280px;
+            .fifth_pan a { 
+                margin-left: 1em;
             }
+
 
             .fifth_wrap {
                 display: -webkit-flex;
@@ -297,56 +376,292 @@
                 flex-direction: row;
                 
             }
+
+
+            /* new section*/
             
+                .master {
+                  height: 600px;
+                  width: 100%;
+                  background-color: ;
+                  display: flex;
+                  flex-direction:column;
+                  
+                }
+
+                .master h1 {
+                    font-family: 'Quicksand', sans-serif;
+                }
+
+                .master p {
+                    font-family: 'Open Sans', sans-serif;
+                    color: black;
+                }
+
+                .row,
+                .col {
+                  display: flex;
+                  flex-direction: row;
+                  height: 100%;
+                  
+                }
+
+                .row_con,
+                .col_con {
+                  
+                  width: 100%;
+                 
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  
+                }
+
+
+
+                .row_con img,
+                .col_con img {
+                   margin-top: 10px;
+                }
+
+                .con1 img {
+                    margin-bottom: 18px;
+                    
+                }
+
+                .row_con h1,
+                .col_con h1 {
+                  margin-bottom: 0px;
+                  
+                }
+
+                .row_con p,
+                .col_con p {
+                  margin-top: 5em;
+                  
+                }
+
+
+
+
+               /* .con1{background-color: green; flex: 1; margin: 4em;}
+                .con2{background-color: blue; flex: 1; margin: 4em;}
+                .con3{background-color: yellow; flex: 1; margin: 4em;}
+                .con4{background-color: purple; flex: 1; margin: 4em;}*/
+
+                .master img {
+                  width: 60px;
+                  height: 60px;
+                }
+
+
+                .con3 hr, .con4 hr {
+                  width: 80%;
+                  transform: rotate(180deg);
+                  margin-top: -.2em;
+                }
+
+
+            /*new section end*/
+
+
+            /*this pan section*/
+
+            .this_pan {
+                position: relative;
+                padding-top: 0em;
+                background-image: url(https://static.pexels.com/photos/40973/background-brown-circle-cut-40973.jpeg);
+
+            }
+
+            .this_wrap {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+
+            }
+
+            
+
+            .this_text {
+                background-color: ;
+                display: flex;
+                flex-direction: column;
+                flex:1;
+                align-items: center;
+                height: 100%;
+                padding-bottom: 5em;
+                margin-left: 0em;
+
+            }
+
+            .this_text h1, h4, p {
+                color: white;
+                margin-bottom: -5px;
+            }
+
+            .this_wrap img {
+                width: auto;
+                height: 9em;
+                float: right;
+                margin-left: 0em;
+                margin-top: 3.5em;
+            }
+
+            .this_text h1 {
+                font-family: 'Quicksand', sans-serif;
+                margin-top: 1em;
+                font-size: 3.5em;
+                color: white;
+            }
+
+            .this_text p {
+                font-family: 'Open Sans', sans-serif;
+                font-size: .9em;
+            }
+
+            .this_text h4  {
+                font-size: 1.5em;
+            }
+
+            
+
+            .this_pan:before {
+                content: '';
+                position: absolute;
+                background-image: url(/images/shop.jpeg);
+                background-size: cover;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.6;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                z-index: -1;
+            }
+
+            .this_wrap video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                min-width: 100%;
+                min-height: 100%;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            /*this section end*/
         </style>
 
+    
 
-        <div class="first_pan">        
+        <div class="first_pan"> 
+              
             <div class="first_con first_table">
+            <ul>
+              <li class="logo"><div class="logo_inner"><h1>JLY</h1></div></li>  
+              <li><a href="{{ url('about') }}">About</a></li>
+              <li><a href="{{ url('/') }}">Home</a></li>
+            </ul> 
                 <div class="info_table_first">
-                    <div id="title"><h1>JOE'S </br>LUMBER</br> YARD</h1></div>
-                    <div id="para">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h1>JOE'S </br>LUMBER</br>YARD</h1>                    
+                    <div class="btn_flex">
+                        <a href="{{ url('about') }}"><button class="button btn1">Learn More</button></a>
+                        <a href="{{ url('gallery') }}"><button class="button btn2" >Order Now</button></a>
                     </div>
-                    <button class="button btn1">Learn More</button>
-                    <button class="button btn2">Order Now</button>
+                </div>
+            </div>
+            <div class="this2_pan">
+                <div class="this2_con">
+                    <div class="this2_wrap">
+                        <h1>I went to the woods because I wished to live deliberately...</h1>
+                        <h2>-Henry David Thoreau<h2>
+                    </div>
+                </div>
+            </div>
+            <div class="this_pan">
+                <div class="this_con">
+                    <div class="this_wrap">
+                    <img src="/images/bh.png"/>
+                        <div class="this_text">
+                        <h1>Build A Birdhouse</h1>
+                        <h4>Every 2nd Saturday @1p.m.</h4>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
             <div class="second_pan">
-                <div class="second_con">
+                <div class="second_con" href="#">
+                <h1>What We Offer</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <hr>
+                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
                     <div class="second_wrap">
-                        <div class="flex22 flex1"><div class="overlay"><div id="orange"><h1>CUSTOM CUTS FOR ANY NEEDS</h1></div></div></div>
-                        <div class="flex22 flex2"><div class="overlay"><div id="orange"><h1>FIRE WOOD ALL WINTER LONG</h1></div></div></div>
-                        <div class="flex22 flex3"><div class="overlay"><div id="orange"><h1>FOR EVERY TREE CHOPPED, TWO MORE ARE PLANTED</h1></div></div></div>
+                        <div class="flex22 flex1"><div class="overlay"><h1>CUSTOM CUTS FOR ANY NEEDS</h1></div></div>
+                        <div class="flex22 flex2"><div class="overlay"><h1>FIRE WOOD ALL WINTER LONG</h1></div></div>
+                        <div class="flex22 flex3"><div class="overlay"><h1>DISCOUNTS FOR MEMBERS</h1></div></div>
                     </div>
                 </div>
             </div>
             <div class="third_pan">
                 <div class="third_con">
                     <div class="third_wrap">
-                        <div class="flex33"><div class="fourth_flex"><h1>Call For A Quote</h1></div></div>
-                        <div class="flex33"><div class="fourth_flex"><h1>CALL FOR A QUOTE</h1></div></div>
+                        <h1>ASK ABOUT</h1>
+                        <hr style="width: 27em;">
                     </div>
                 </div>
             </div>
-            <div class="fourth_pan">
-                <div class="fourth_con">
-                    <div class="fourth_wrap">
-                        <div class="flex4"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
-                        <div class="flex4"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
-                    </div>
+            <div class="master">
+              <div class="row">
+                <div class="con1 row_con">
+                  <h1>CAMP FIRE SAFTEY CLASSES</h1>
+                  <img src="/images/campfire.png" />
+                  <p>Sed do eiusmod tempor incididunt ut labore.</p>
                 </div>
+                <hr>
+                <div class="con2 row_con">
+                  <h1>TOOLS</h1>
+                  <img src="/images/hatchet.png" />
+                  <hr>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="con3 col_con">
+                  <hr>
+                  <h1>WORKSHOP SPACE</h1>
+                  <img src="/images/chainsaw.png" />
+                  <p>Et dolore magna aliqua.</p>
+                </div>
+                <hr>
+                <div class="con4 col_con">
+                  <hr>
+                  <h1>WHITTLING CLASSES</h1>
+                  <img src="/images/whittle.png" />
+                  <p>Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+              </div>
             </div>
             <div class="fifth_pan">
                 <div class="fifth_con">
                     <div class="fifth_wrap">
-                        <div class="flex5"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
-                        <div class="flex5"><div class="fourth_flex"><h1>THIS IS OVERLAY</h1></div></div>
+                        <a href="{{ url('gallery') }}">Attributation</a>
+                        <a href="{{ url('gallery') }}">Privacy Policy</a>
+                        <a href="{{ url('gallery') }}">All Rights Reserved</a>
                     </div>
                 </div>
             </div>
         </div>
+    
 @endsection
 
 

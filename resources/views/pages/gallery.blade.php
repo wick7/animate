@@ -36,15 +36,6 @@
                 font-family: 'Raleway', sans-serif;
             }
 
-            .animate {
-                padding-top: 4em;
-                padding-bottom: 4em;
-            }
-
-            .animate img {
-                position: relative;
-
-            }
 
             .tablet {
                 height: 280px;
@@ -63,15 +54,26 @@
         </style>
 
         <div class="container">
+
             <div class="header header_table">
-                <div class="table">
-                    <h1>Gallery</h1>
-                    <input class="button" type="button" value="test"/> 
+
+                
+                <ul>
+              
+              <li><a href="{{ url('about') }}">About</a></li>
+              <li><a href="{{ url('/') }}">Home</a></li>
+            </ul> 
+                    <h1>Attributation</h1>
+                    
+                    <div>Icons made by <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                        <div>Icons made by <a href="http://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                 </div>
                 
             </div>
             <div class="animate">
-                <img class="tablet" src="https://designcode.io/cloud/ios9-ipad/ipad.jpg">
+                
             </div>
         </div>
         

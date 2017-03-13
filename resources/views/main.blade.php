@@ -11,6 +11,9 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=BioRhyme|Ewert" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -21,9 +24,12 @@
                 border: 0px;
                 padding: 0px;
                 margin: 0px;
-
+                
+                
+                background-color: ;
             }
 
+            
          
 
             ul {
@@ -31,7 +37,8 @@
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                background-color: rgb(255, 111, 2);
+                font-family: 'Open Sans', sans-serif;
+                
             }
 
             li {
@@ -57,17 +64,19 @@
             .logo {
                 display: block;
                 float: left;
-                /*padding: 24px 26px;*/
-                background-color: yellow;
-
+                font-family: 'Ewert', cursive;
+                background-color: ;
+                vertical-align: middle;
+                color: white;
             }
 
-            
-
-            img {
-                max-width:30%;
-                max-height:30%;
+            .logo_inner h1 {
+                font-size: 3em;
+               margin-top: .1em;
+               margin-left: 1em;
             }
+
+
             
         </style>
     </head>
@@ -75,12 +84,7 @@
             
 
         <div class="container">
-            <ul>
-              <li class="logo"><div class="logo_inner"></div></li>  
-              <li><a href="{{ url('gallery') }}">Gallery</a></li>
-              <li><a href="{{ url('about') }}">About</a></li>
-              <li><a href="{{ url('/') }}">Home</a></li>
-            </ul>
+            
 
             
         @yield('content')
