@@ -34,7 +34,11 @@
           
          /*First Pannel*/  
 
-           
+           .container_home {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+           }
 
             .first_pan {
                 background: url(/images/yard.jpg);
@@ -105,7 +109,7 @@
 
             .fourth_pan {
                 
-                background-color: white;
+                background-color: ;
 
             }
 
@@ -124,10 +128,11 @@
             .fourth_pan p { 
                 font-size: 1em;
                 margin-top: 0em;
-                margin-left: 2em;
+                margin-left: 0em;
                 margin-right: 2em;
                 color: gray;
                 font-family: 'Open Sans', sans-serif;
+
 
             }
 
@@ -182,7 +187,7 @@
             }
 
             .overlay h1 {
-                font-size: 2em;
+                font-size: 30%;
                 font-family: 'Quicksand', sans-serif;
                 text-align: center;
                 margin-top: 2em;
@@ -531,7 +536,8 @@
          
 
             /*this section end*/
-        </style>  
+        </style> 
+        <div class="container_home">
             <div class="first_pan">
                 <ul>
                   <li class="logo"><div class="logo_inner"><h1>JLY</h1></div></li>  
@@ -586,7 +592,7 @@
                 <div class="third_con">
                     <div class="third_wrap">
                         <h1>ASK ABOUT</h1>
-                        <hr style="width: 27em;">
+                        <hr style="width: 40%;">
                     </div>
                 </div>
             </div>
@@ -631,7 +637,7 @@
                 </div>
             </div>
         </div>
-    
+    </div>
 @endsection
 
 

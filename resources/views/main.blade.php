@@ -19,7 +19,7 @@
         <style>
             html, body, .container {
                 height: 100%;
-                width: 100%;
+                width: auto;
                 outline: 0px;
                 border: 0px;
                 padding: 0px;
