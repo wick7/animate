@@ -347,109 +347,109 @@
        
             }
 
-            .fifth_pan {
-                background-color: gray;
-                padding-top: 1em;
-                padding-bottom: 1em;
-                
-            }
-
-            .fifth_pan a { 
-                margin-left: 1em;
-            }
-
-
-            .fifth_wrap {
-                display: -webkit-flex;
-                display: flex;
-                -webkit-flex-direction: row;
-                flex-direction: row;
-                
-            }
+            
 
 
             /* new section*/
             
-                .master {
-                  height: 600px;
-                  width: 100%;
-                  background-color: ;
-                  display: flex;
-                  flex-direction:column;
-                  
-                }
+            .master {
+              height: auto;
+              width: 100%;
+              background-color: ;
+              display: flex;
+              flex-direction: column;
+            }
 
-                .master h1 {
-                    font-family: 'Quicksand', sans-serif;
-                }
+            .row,
+            .col {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+              }
+            .row_con,
+            .col_con {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-                .master p {
-                    font-family: 'Open Sans', sans-serif;
-                    color: black;
-                }
+            @media (min-width: 760px) {
+              .master {
+              height: 400px;
+              width: 100%;
+              background-color: ;
+              display: flex;
+              flex-direction: column;
+            }
+              .row,
+              .col {
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+              }
+              .row_con,
+              .col_con {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+              
+              .row,
+              .col {}
 
-                .row,
-                .col {
-                  display: flex;
-                  flex-direction: row;
-                  height: 100%;
-                  
-                }
-
-                .row_con,
-                .col_con {
-                  
-                  width: 100%;
-                 
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  
-                }
-
-
-
-                .row_con img,
-                .col_con img {
-                   margin-top: 10px;
-                }
-
-                .con1 img {
-                    margin-bottom: 18px;
-                    
-                }
-
-                .row_con h1,
-                .col_con h1 {
-                  margin-bottom: 0px;
-                  
-                }
-
-                .row_con p,
-                .col_con p {
-                  margin-top: 5em;
-                  
-                }
+              .row_con,
+              .col_con {}
+            }
 
 
+            /*  end media */
 
+            .row_con img,
+            .col_con img {
+              margin-bottom: 10px;
+            }
 
-               /* .con1{background-color: green; flex: 1; margin: 4em;}
-                .con2{background-color: blue; flex: 1; margin: 4em;}
-                .con3{background-color: yellow; flex: 1; margin: 4em;}
-                .con4{background-color: purple; flex: 1; margin: 4em;}*/
+            .row_con h1,
+            .col_con h1 {
+              margin-bottom: 0px;
+            }
 
-                .master img {
-                  width: 60px;
-                  height: 60px;
-                }
+            .row_con p,
+            .col_con p {}
 
+            .con1 {
+              background-color: red;
+              flex: 1;
+            }
 
-                .con3 hr, .con4 hr {
-                  width: 80%;
-                  transform: rotate(180deg);
-                  margin-top: -.2em;
-                }
+            .con2 {
+              background-color: yellow;
+              flex: 1;
+            }
+
+            .con3 {
+              background-color: green;
+              flex: 1;
+            }
+
+            .con4 {
+              background-color: blue;
+              flex: 1;
+            }
+
+            .master img {
+              width: 60px;
+              height: 60px;
+            }
+
+            .con3 hr,
+            .con4 hr {
+              width: 80%;
+              transform: rotate(180deg);
+              margin-top: -.2em;
+            }
 
 
             /*new section end*/
@@ -533,6 +533,31 @@
                 z-index: -1;
             }
 
+            /*last section - footer*/
+
+            .fifth_pan {
+                background-color: gray;
+                padding-top: 1em;
+                padding-bottom: 1em;
+                
+            }
+
+            .fifth_pan a { 
+                margin-left: 1em;
+            }
+
+
+            .fifth_wrap {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                
+            }
+
+           /* end last section - footer*/
+
+
          
 
             /*this section end*/
@@ -599,7 +624,7 @@
             <div class="master">
               <div class="row">
                 <div class="con1 row_con">
-                  <h1>CAMP FIRE SAFTEY CLASSES</h1>
+                  <h1>FIRE SAFTEY CLASSES</h1>
                   <img src="/images/campfire.png" />
                   <p>Sed do eiusmod tempor incididunt ut labore.</p>
                 </div>
@@ -608,7 +633,7 @@
                   <h1>TOOLS</h1>
                   <img src="/images/hatchet.png" />
                   <hr>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
               </div>
               <div class="col">
@@ -638,6 +663,7 @@
             </div>
         </div>
     </div>
+    @section('footer')
 @endsection
 
 

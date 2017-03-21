@@ -18,7 +18,7 @@
         <!-- Styles -->
         <style>
             html, body, .container {
-                height: 100%;
+                height: auto;
                 width: auto;
                 outline: 0px;
                 border: 0px;
