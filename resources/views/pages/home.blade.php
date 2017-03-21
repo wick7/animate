@@ -417,7 +417,7 @@
             }
 
             .row_con p,
-            .col_con p {}
+            .col_con p {color:black;}
 
             .con1 {
               background-color: ;
@@ -450,6 +450,13 @@
               transform: rotate(180deg);
               margin-top: -.2em;
             }
+
+            .con2 hr {
+  width: 80%;
+  transform: rotate(180deg);
+  position: relative;
+  bottom: 10em;
+}
 
 
             /*new section end*/
