@@ -420,22 +420,22 @@
             .col_con p {}
 
             .con1 {
-              background-color: red;
+              background-color: ;
               flex: 1;
             }
 
             .con2 {
-              background-color: yellow;
+              background-color: ;
               flex: 1;
             }
 
             .con3 {
-              background-color: green;
+              background-color: ;
               flex: 1;
             }
 
             .con4 {
-              background-color: blue;
+              background-color: ;
               flex: 1;
             }
 
