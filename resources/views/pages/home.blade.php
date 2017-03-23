@@ -140,16 +140,26 @@
             .fourth_wrap {
                 display: -webkit-flex;
                 display: flex;
+                -webkit-flex-direction: column;
+                flex-direction: column;
+                margin: 0 auto;
+                justify-content: space-between;
+                width: auto;
+                margin-top: 5em;
+            }
+
+            @media (min-width: 760px) {
+              .fourth_wrap {
+                display: -webkit-flex;
+                display: flex;
                 -webkit-flex-direction: row;
                 flex-direction: row;
                 margin: 0 auto;
                 justify-content: space-between;
                 width: auto;
                 margin-top: 5em;
-
-
+                }
             }
-
             
 
 
@@ -401,6 +411,15 @@
 
               .row_con,
               .col_con {}
+
+              .con3 hr,
+              .con4 hr {
+              
+            }
+
+            .con2 hr {
+              
+            }
             }
 
 
