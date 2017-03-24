@@ -78,7 +78,25 @@
                 
             }
 
+            
+
             .first_con button {
+                background-color: rgb(2, 23, 255);
+                border: none;
+                color: white;
+                padding: 5px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 13px;
+                cursor: pointer;
+                font-family: 'Open Sans', sans-serif;
+                border-radius: 10px 10px;
+
+            }
+
+           @media (min-width: 906px) {
+            .first_con button {
+                
                 background-color: rgb(2, 23, 255);
                 border: none;
                 color: white;
@@ -89,8 +107,9 @@
                 cursor: pointer;
                 font-family: 'Open Sans', sans-serif;
                 border-radius: 10px 10px;
-                
+               
             }
+        }
 
             .btn_con_first {
                 margin: 0 auto;
@@ -101,6 +120,7 @@
                 flex-direction: row;
                 justify-content: space-between;
             }
+
  
 
           
@@ -120,7 +140,7 @@
             }
 
             .fourth_pan h1 {
-              font-size: 4em;
+              font-size: 5em;
               font-family: 'Quicksand', sans-serif;
             }
 
@@ -190,7 +210,7 @@
               border-width: 3px;
               border-color: rgb(255, 111, 2);
               border-radius: 10px 10px;
-              width: 9em;
+              width: 9.5em;
             }
 
             .overlay h1 {
@@ -207,7 +227,9 @@
 
             .overlay_bef #orange {}
 
-            .overlay_bef h1 {}
+            .overlay_bef h1 {
+
+            }
 
             .overlay_bef h2 {
               display: block;
@@ -227,6 +249,8 @@
                 justify-content: space-between;
                 width: auto;
                 margin-top: 5em;
+                margin-left: 2em;
+                margin-right: 2em;
               }
               .overlay_bef:hover .overlay {
                 opacity: 1;
@@ -247,6 +271,7 @@
               
               .overlay_bef h1 {
                 visibility: visible;
+                font-size: 1em;
               }
               .overlay_bef h2 {
                 
