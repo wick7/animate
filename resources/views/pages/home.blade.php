@@ -108,47 +108,116 @@
            /* Fourth Pannel - former second*/
 
             .fourth_pan {
-                
-                background-color: ;
-
+              background-color: ;
+              display: flex;
+              flex-direction: column;
             }
 
-            .fourth_pan h1, p {
-                text-align: center;
-                color: black;
-                
+            .fourth_pan h1,
+            p {
+              text-align: center;
+              color: black;
             }
 
-            .fourth_pan h1 { 
-                font-size: 4em;
-                font-family: 'Quicksand', sans-serif;
-
+            .fourth_pan h1 {
+              font-size: 4em;
+              font-family: 'Quicksand', sans-serif;
             }
 
-            .fourth_pan p { 
-                font-size: 1em;
-                margin-top: 0em;
-                margin-left: 0em;
-                margin-right: 2em;
-                color: gray;
-                font-family: 'Open Sans', sans-serif;
-
-
+            .fourth_pan p {
+              font-size: 1em;
+              margin-top: 0em;
+              margin-left: 0em;
+              margin-right: 2em;
+              color: gray;
+              font-family: 'Open Sans', sans-serif;
             }
-
 
             .fourth_wrap {
-                display: -webkit-flex;
-                display: flex;
-                -webkit-flex-direction: column;
-                flex-direction: column;
-                margin: 0 auto;
-                justify-content: space-between;
-                width: auto;
-                margin-top: 5em;
+              display: -webkit-flex;
+              display: flex;
+              -webkit-flex-direction: column;
+              flex-direction: column;
+              margin: 0 auto;
+              
+              
+              margin-top: 5em;
             }
 
-            @media (min-width: 760px) {
+            .overlay_bef {
+              
+              
+              box-sizing: border-box;
+              margin-left: 0em;
+              border-radius: 10px 10px;
+              height: 300px;
+              margin-bottom: 5em;
+              text-align: center;
+              font-size: 2em;
+            }
+
+            .overlay_bef1 {
+              background: url(/images/chopping.jpg);
+              background-color: ;
+              background-size: cover;
+              background-repeat: no-repeat;
+              
+            }
+
+            .overlay_bef2 {
+              background: url(/images/winter_wood.jpeg);
+              background-color: ;
+              background-size: cover;
+              background-repeat: no-repeat;
+            }
+
+            .overlay_bef3 {
+              background: url(/images/planting.jpeg);
+              background-color: ;
+              background-size: cover;
+              background-repeat: no-repeat;
+            }
+
+            .overlay {
+              background: rgba(0, 0, 0, .75);
+              color: white;
+              text-align: center;
+              vertical-align: middle;
+              opacity: 0;
+              -webkit-transition: opacity .25s ease;
+              height: 100%;
+              border-style: solid;
+              border-width: 3px;
+              border-color: rgb(255, 111, 2);
+              border-radius: 10px 10px;
+              width: 9em;
+            }
+
+            .overlay h1 {
+              font-size: 50%;
+              font-family: 'Quicksand', sans-serif;
+              text-align: center;
+              margin-top: 2em;
+              margin-right: .3em;
+              margin-left: .3em;
+              color: white;
+            }
+
+            .overlay_bef .overlay {}
+
+            .overlay_bef #orange {}
+
+            .overlay_bef h1 {}
+
+            .overlay_bef h2 {
+              display: block;
+            }
+            .overlay_bef1, .overlay_bef3 h2 {
+                color: white;
+              }
+
+
+            @media (min-width: 906px) {
               .fourth_wrap {
                 display: -webkit-flex;
                 display: flex;
@@ -158,65 +227,34 @@
                 justify-content: space-between;
                 width: auto;
                 margin-top: 5em;
-                }
-            }
-            
-
-
-            .overlay_bef {  
-                height: auto;
-                
-                flex: 1;
-                box-sizing: border-box;
-                margin-left: 0em;
+              }
+              .overlay_bef:hover .overlay {
+                opacity: 1;
+                border-radius: 10px 10px;
+               
+              }
+              .overlay_bef:hover #orange {
+                opacity: 1;
                 border-radius: 10px 10px;
                 
-                height: 300px; 
-                margin-bottom: 5em;
-
-            }
-
-            .overlay_bef1 {background: url(/images/chopping.jpg);background-size: cover; background-repeat: no-repeat;}
-            .overlay_bef2 {background: url(/images/winter_wood.jpeg); background-size: cover; background-repeat: no-repeat;}
-            .overlay_bef3 {background: url(/images/planting.jpeg); background-size: cover; background-repeat: no-repeat;}
-
-
-            .overlay {
-                background: rgba(0, 0, 0, .75);
-                color: white;
-                text-align: center;
-                vertical-align: middle;                
-                opacity: 0;
-                -webkit-transition: opacity .25s ease;
-                height: 100%;
-                border-style: solid;
-                border-width: 3px;
-                border-color: rgb(255, 111, 2);
-                border-radius: 10px 10px;
-
-            }
-
-            .overlay h1 {
-                font-size: 30%;
-                font-family: 'Quicksand', sans-serif;
-                text-align: center;
-                margin-top: 2em;
-                margin-right: .3em;
-                margin-left: .3em;
-                color: white;
-            }
-
-            .overlay_bef:hover .overlay {
-                  opacity:1;
-                  border-radius: 10px 10px;
-                  
-            }
-
-
-            .overlay_bef:hover #orange {
-                opacity:1;
-                border-radius: 10px 10px;
+              }
+              
+              .overlay_bef {
+               flex-basis: 10%;
+                flex-grow: 0;
+                flex-shrink: 0;
+              }
+              
+              .overlay_bef h1 {
+                visibility: visible;
+              }
+              .overlay_bef h2 {
                 
+                display: none;
+              }
+
+
+              
             }
 
 
@@ -633,9 +671,9 @@
                 <hr>
                 <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
                     <div class="fourth_wrap">
-                        <div class="overlay_bef overlay_bef1"><div class="overlay"><h1>CUSTOM CUTS FOR ANY NEEDS</h1></div></div>
-                        <div class="overlay_bef overlay_bef2"><div class="overlay"><h1>FIRE WOOD ALL WINTER LONG</h1></div></div>
-                        <div class="overlay_bef overlay_bef3"><div class="overlay"><h1>DISCOUNTS FOR MEMBERS</h1></div></div>
+                        <div class="overlay_bef overlay_bef1"><h2>CUSTOM CUTS FOR ANY NEEDS</h2><div class="overlay"><h1>CUSTOM CUTS FOR ANY NEEDS</h1></div></div>
+                        <div class="overlay_bef overlay_bef2"><h2>FIRE WOOD ALL WINTER LONG</h2><div class="overlay"><h1>FIRE WOOD ALL WINTER LONG</h1></div></div>
+                        <div class="overlay_bef overlay_bef3"><h2>DISCOUNTS FOR MEMBERS</h2><div class="overlay"><h1>DISCOUNTS FOR MEMBERS</h1></div></div>
                     </div>
                 </div>
             </div>
