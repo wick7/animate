@@ -332,33 +332,47 @@
                 z-index: -1;
             }
 
-            .this2_pan {
-                position: relative;
-                padding-top: .5em;
-                padding-bottom: 0em;
-                z-index: 1;
-                background-color: white;
-            }
+            /*BANNER PANNEL*/
 
-            .this2_wrap {
+            .banner_pan {
                 width: 100%;
+                background-color: white;
+                overflow: auto;
             }
 
-            .this2_wrap h1 {
-                text-align: center;
-                font-family: 'Clicker Script', cursive;
-                font-size: 4em;
+            .banner_wrap {
+              width: auto;
             }
 
-            .this2_wrap h2 {
-                text-align: right;
-                margin-top: .2em;
-                margin-right: 3em;
-                font-family: 'Clicker Script', cursive;
-                font-size: 2em;
+            .banner_wrap h1 {
+              text-align: center;
+              font-family: 'Clicker Script', cursive;
+              font-size: 1.2em;
             }
 
-           
+            .banner_wrap h2 {
+              float: right;
+              margin-right: 2%;
+              font-family: 'Clicker Script', cursive;
+              font-size: .7em;
+            }
+
+            @media(min-width: 780px) {
+              .banner_wrap h1 {
+              text-align: center;
+              font-family: 'Clicker Script', cursive;
+              font-size: 2.5em;
+            }
+
+            .banner_wrap h2 {
+              text-align: right;
+              margin-right: 1%;
+              font-family: 'Clicker Script', cursive;
+              font-size: 1.5em;
+            }
+            }
+
+           /*BANNER PANNEL END */
 
 
             /*Fourth Pannel*/
@@ -666,12 +680,10 @@
                     </div>
                 </div>
             </div>
-            <div class="this2_pan">
-                <div class="this2_con">
-                    <div class="this2_wrap">
-                        <h1>I went to the woods because I wished to live deliberately...</h1>
-                        <h2>-Henry David Thoreau<h2>
-                    </div>
+           <div class="banner_pan">
+                <div class="banner_wrap">
+                    <h1>I went to the woods because I wished to live deliberately...</h1>
+                    <h2>-Henry David Thoreau<h2>
                 </div>
             </div>
             <div class="this_pan">
