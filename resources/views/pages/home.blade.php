@@ -63,7 +63,7 @@
         font-family: 'Quicksand', sans-serif;
         font-size: 400%;
         background-color: ;
-        margin-top: -10px;
+        margin-top: -20px;
     }
 
 
@@ -542,7 +542,7 @@ background: gradient(left, rgba(28,28,28,1) 0%, rgba(31,31,31,1) 12%, rgba(36,36
   .col_con p {color:black;}
 
   .con1 {
-      background-color: ;
+      background-color: gray;
       flex: 1;
   }
 
@@ -552,7 +552,7 @@ background: gradient(left, rgba(28,28,28,1) 0%, rgba(31,31,31,1) 12%, rgba(36,36
   }
 
   .con3 {
-      background-color: ;
+      background-color: gray;
       flex: 1;
   }
 
@@ -568,6 +568,18 @@ background: gradient(left, rgba(28,28,28,1) 0%, rgba(31,31,31,1) 12%, rgba(36,36
 
   .con3 hr,
   .con4 hr {
+      visibility: hidden;
+  }
+
+  .con2 hr {
+      visibility: hidden;
+  }
+
+
+@media (min-width: 760px) {
+
+    .con3 hr,
+  .con4 hr {
       width: 80%;
       transform: rotate(180deg);
       margin-top: -.2em;
@@ -579,7 +591,13 @@ background: gradient(left, rgba(28,28,28,1) 0%, rgba(31,31,31,1) 12%, rgba(36,36
       position: relative;
       bottom: 10em;
   }
-
+   .con1 {
+      background-color: white;
+  }
+  .con3 {
+      background-color: white;
+  }
+}
 
   /*new section end*/
 
@@ -759,7 +777,6 @@ background: gradient(left, rgba(28,28,28,1) 0%, rgba(31,31,31,1) 12%, rgba(36,36
       <div class="con2 row_con">
           <h1>TOOLS</h1>
           <img src="/images/hatchet.png" />
-          <hr>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
   </div>
