@@ -43,6 +43,26 @@
 
             li {
                 float: right;
+
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 12px 13px;
+                text-decoration: none;
+                margin-top: .5em;
+            }
+
+            li a:hover:not(.active) {
+                background-color: rgb(2, 23, 255);
+            }
+
+
+            @media(min-width: 780px) {
+              li {
+                float: right;
             }
 
             li a {
@@ -55,6 +75,7 @@
 
             li a:hover:not(.active) {
                 background-color: rgb(2, 23, 255);
+            }
             }
 
             .active {
@@ -73,7 +94,7 @@
             .logo_inner h1 {
                 font-size: 3em;
                margin-top: .1em;
-               margin-left: 1em;
+               margin-left: 0em;
             }
 
 
