@@ -4,7 +4,7 @@
 
 
 
-<title>Laravel</title>
+<title>Joe's Lumber Yard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Fonts -->
