@@ -799,7 +799,7 @@ background: gradient(left, rgba(28,28,28,1) 0%, rgba(31,31,31,1) 12%, rgba(36,36
 <div class="fifth_pan">
     <div class="fifth_con">
         <div class="fifth_wrap">
-            <a href="{{ url('gallery') }}">Attributation</a>
+            <a href="{{ url('gallery') }}">Attribution</a>
             <a href="{{ url('gallery') }}">Privacy Policy</a>
             <a href="{{ url('gallery') }}">All Rights Reserved</a>
         </div>
