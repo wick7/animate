@@ -25,7 +25,7 @@
 
 <script type="text/javascript" src="{{ URL::asset('js/fade.js') }}"></script>
 
-
+<link href='css/css.css' rel="stylesheet" type="text/css" >
 <link href="{{ URL::to('css/css.css') }}" rel="stylesheet" type="text/css" >
 
 </head>
