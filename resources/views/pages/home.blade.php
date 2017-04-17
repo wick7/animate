@@ -391,7 +391,7 @@
 /* Fourth Pannel*/
 
 .fourth_pan {
-    height: auto;
+    height: 55em;
     width: 100%;
     background-color: ;
     display: flex;
@@ -429,7 +429,7 @@
 .col_wrap p {color:black;}
 
 .con1, .con3  {
-    background-color: gray;
+    background-color: ;
     flex: 1;
 }
 
@@ -529,7 +529,7 @@
 }
 
 /* End Fifth Pannel - last section/footer*/
-  
+
 </style>
 
 </head>
