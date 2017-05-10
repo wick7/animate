@@ -78,7 +78,7 @@
 
 
 .first_con button {
-    background-color: /*rgb(2, 23, 255)*/ green;
+    background-color: rgb(2, 23, 255);
     border: none;
     color: white;
     padding: 5px;
@@ -95,7 +95,7 @@
 @media (min-width: 906px) {
     .first_con button {
 
-        background-color: /*rgb(2, 23, 255)*/ green;
+        background-color: rgb(2, 23, 255);
         border: none;
         color: white;
         padding: 20px;
